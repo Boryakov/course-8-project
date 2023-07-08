@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import generics, viewsets
+from rest_framework import generics, viewsets, permissions
 
 from . import serializers, models
 
@@ -25,3 +25,4 @@ class BookingViewSet(viewsets.ModelViewSet):
 
     queryset = models.Booking.objects.all()
     serializer_class = serializers.BookingSerializer
+    permission_classes = [permissions.IsAuthenticated]

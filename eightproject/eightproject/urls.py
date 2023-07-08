@@ -22,4 +22,6 @@ from rest_framework.routers import DefaultRouter
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('restaurant/', include('myapp.urls')),
+    path('auth/', include('djoser.urls')), 
+    path('auth/', include('djoser.urls.authtoken')), 
 ]
