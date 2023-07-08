@@ -19,3 +19,4 @@ class Menu(models.Model):
     def __str__(self) -> str:
             return 'id: '+ str(self.pk) +', ' + self.title
 
+
