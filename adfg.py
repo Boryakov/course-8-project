@@ -1,0 +1,2 @@
+from django import test
+from rest_framework.authentication import BasicAuthentication
